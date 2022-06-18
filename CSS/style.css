@@ -5,18 +5,24 @@
 }
 
 body {
-  height: 100%;
+  height: 140vh;
+  width: 100vw;
   font-family: 'Roboto Mono',monospace;
   color: #2cd4d9;
-  overflow-y: hidden;
   overflow-x: hidden;
+  background: linear-gradient(68.15deg, #0047b5 16.62%, #39a0ed  85.61%);
+  text-align: center;
 }
 header {
-  width: 100%;
-  top: 0;
   background: #1b4079;
   border-bottom: 0.4px solid #FFF2E7;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .logos {
   padding: 0.5rem;
   justify-content: space-between;
@@ -38,7 +44,6 @@ header {
 main {
   text-align: center;
   height: 100vh;
-  background: linear-gradient(68.15deg, #0047b5 16.62%, #39a0ed  85.61%);
 }
 
 .Calculadora {
@@ -78,4 +83,59 @@ button:hover {
   font-size: 25px;
   color: black;
   text-align: right;
+}
+
+footer {
+  position: absolute;
+  bottom: -40vh;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  border-top: 0.4px solid #FFF2E7;
+  background: #111;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 1rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+  font-size: 40px;
+}
+
+.socials a:hover i {
+  color: aqua;
 }
