@@ -48,7 +48,7 @@ main {
 
 .Calculadora {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
@@ -62,6 +62,7 @@ button {
   width: 50px;
   font-size: 25px;
   margin: 3px;
+  border: none;
 }
 button:hover {
   background-color: #bd7b02;
@@ -131,11 +132,31 @@ footer {
 }
 
 .socials a i {
-  font-size: 1.1rem;
   transition: color .4s ease;
   font-size: 40px;
 }
 
 .socials a:hover i {
   color: aqua;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .page-logo {
+  width: 8.5rem;
+  } 
+}
+
+@media only screen and (max-width: 400px){
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  .socials a i {
+    font-size: 32px;
+  }
+
+  .page-logo {
+    padding-left: 0.5rem;
+    width: 7.5rem;
+  }
 }

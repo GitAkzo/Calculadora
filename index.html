@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imersão Dev - Calculadora</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imersão Dev - Calculadora</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="../Calculadora/CSS/style.css">
-  </head>
-  <body>
-    <header class="logos">
-        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo Imersão dev">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura" class="alura-logo">
-    </header>
-    <main>
-        <div class="Calculadora">
-            <h1>Calculadora</h1>
-            <p id="resultado"></p>
-            <table>
-                <tr>
-                    <td><button onclick="limpar()">C</button></td>
-                    <td><button onclick="apagar()">⌫</button></td>
-                    <td><button onclick="inserir('/')">/</button></td>
-                    <td><button onclick="inserir('*')">X</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="inserir('7')">7</button></td>
-                    <td><button onclick="inserir('8')">8</button></td>
-                    <td><button onclick="inserir('9')">9</button></td>
-                    <td><button onclick="inserir('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="inserir('4')">4</button></td>
-                    <td><button onclick="inserir('5')">5</button></td>
-                    <td><button onclick="inserir('6')">6</button></td>
-                    <td><button onclick="inserir('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="inserir('1')">1</button></td>
-                    <td><button onclick="inserir('2')">2</button></td>
-                    <td><button onclick="inserir('3')">3</button></td>
-                    <td rowspan="2"><button id="igual" onclick="calcular()">=</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button id="zero" onclick="inserir('0')">0</button></td>
-                    <td><button onclick="inserir('.')">.</button></td>
-                </tr>
-            </table>
-        </div>
-    </main>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="../Calculadora/CSS/style.css">
+    </head>
 
-    <footer>
-        <div class="footer-content">
-            <h3>Paulo Raséc</h3>
-            <p>Desenvolvido por Raséc durante a  ImersãoDev proposta pelo grupo <a href="https://www.instagram.com/aluraonline/" target="_blank" rel="noopener">Alura</a></p>
-            <ul class="socials">
-            <li><a href="https://www.linkedin.com/in/rasec-silva/" target="_blank" rel="noopener"><i class="devicon-linkedin-plain colored"></i></a></li>
-            </ul>
-           
-        </div>
- 
-    </footer>
-
-
-
-  </body>
-
+    <div class="container">
+        <body>
+            <header class="logos">
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="Logo Imersão dev">
+                <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="Logo da Alura" class="alura-logo">
+            </header>
+            
+            <main>
+                <div class="Calculadora">
+                    <h1>Calculadora</h1>
+                    <p id="resultado"></p>
+                    <table>
+                        <tr>
+                            <td><button onclick="limpar()">C</button></td>
+                            <td><button onclick="apagar()">⌫</button></td>
+                            <td><button onclick="inserir('/')">/</button></td>
+                            <td><button onclick="inserir('*')">X</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="inserir('7')">7</button></td>
+                            <td><button onclick="inserir('8')">8</button></td>
+                            <td><button onclick="inserir('9')">9</button></td>
+                            <td><button onclick="inserir('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="inserir('4')">4</button></td>
+                            <td><button onclick="inserir('5')">5</button></td>
+                            <td><button onclick="inserir('6')">6</button></td>
+                            <td><button onclick="inserir('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="inserir('1')">1</button></td>
+                            <td><button onclick="inserir('2')">2</button></td>
+                            <td><button onclick="inserir('3')">3</button></td>
+                            <td rowspan="2"><button id="igual" onclick="calcular()">=</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="zero" onclick="inserir('0')">0</button></td>
+                            <td><button onclick="inserir('.')">.</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </main>
+        
+            <footer>
+                <div class="footer-content">
+                    <h3>Paulo Raséc</h3>
+                    <p>Desenvolvido por Raséc durante a  ImersãoDev proposta pelo grupo <a href="https://www.instagram.com/aluraonline/" target="_blank" rel="noopener">Alura</a></p>
+                    <ul class="socials">
+                    <li><a href="https://www.linkedin.com/in/rasec-silva/" target="_blank" rel="noopener"><i class="devicon-linkedin-plain colored"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+          </body>
+    </div>
   <script src="../Calculadora/JS/script.js"></script>
 </html>
